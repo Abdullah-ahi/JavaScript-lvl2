@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="app">
+            <header>
+                <div class = 'shop_logo'><a class = 'shop_logo_link' href="#">Интернет магазин</a></div>
+                <search-goods ref="search-goods"></search-goods>
+                <show-basket ref="show-basket"></show-basket>
+            </header>
+    
+            <main>
+                <basket ref="basket"></basket>
+                <products ref="products"></products>
+                <error ref="error"></error>
+            </main>
+        </div>
+    </div>
+    
+    <script src="https://kit.fontawesome.com/66d3a01639.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src = "scripts/CartComp.js"></script>
+    <script src = "scripts/ProductComp.js"></script>
+    <script src="scripts/searchGoods.js"></script>
+    <script src="scripts/showBasket.js"></script>
+    <script src="scripts/getJsonError.js"></script>
+    <script src = 'scripts/index.js'></script>
+</body>
+</html>
