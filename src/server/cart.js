@@ -1,5 +1,3 @@
-const { groupCollapsed } = require("console");
-
 const add = (cart, req) => {
     cart.contents.push(req.body);
     return JSON.stringify(cart, null, 4);
@@ -20,12 +18,6 @@ const del = (cart, req) => {
         find.quantity -= 1;
     }
     return JSON.stringify(cart, null, 4);
-};
-
-const writeAdd = (stats, req) => {
-    
-    stats.contents.push({"id": req.params.id, "Act": "Добавлено"});
-    return JSON.stringify(stats, null, 4);
 };
 
 module.exports = {
